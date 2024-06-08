@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio Rivas</title>
+</head>
+
+<body>
+    <!--INICIO-->
+    <section id="inicio">
+
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/RIVAS/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--MENU REPOSIVE (ICONO)-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--ICONOS REDES SOCIALES-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <!--PRESENTACIÓN-->
+            <div class="presentacion">
+
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Luis Rivas</span>, Junior Developer</h2>
+                <p class="descripcion">Apasionado por la tecnología y el desarrollo de 
+                    software. Aquí encontrarás una muestra de mi trabajo, incluyendo mis habilidades, estudios,
+                    cursos y proyectos destacados. Explora para conocer más sobre mi trayectoria y cómo puedo
+                    contribuir a tu próximo proyecto.
+                    <br>
+                    <br>
+                    Gracias por visitar mi sitio web y espero que disfrutes tu recorrido por mi portafolio.
+                    <br>
+                    ¡Estoy emocionado por compartir mi viaje y mis logros contigo!
+                </p>    
+                <a href="#portfolio">Ir a portafolio</a>
+            
+                <!--FONDO-->
+                <div class="animation-container">
+                    <div class="lightning-container">
+                        <div class="lightning white"></div>
+                        <div class="lightning red"></div>
+                    </div>
+                    <div class="boom-container">
+                        <div class="shape circle big white"></div>
+                        <div class="shape circle white"></div>
+                        <div class="shape triangle big yellow"></div>
+                        <div class="shape disc white"></div>
+                        <div class="shape triangle blue"></div>
+                    </div>
+                    <div class="boom-container second">
+                        <div class="shape circle big white"></div>
+                        <div class="shape circle white"></div>
+                        <div class="shape disc white"></div>
+                        <div class="shape triangle blue"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--SOBRE MI-->
+            <section id="sobremi">
+                <div class="contenedor-foto">
+                    <img id="img" src="imagenes/Caricatura - Fondo aguamarina.jpeg" alt="">
+                </div>
+                <div class="sobremi">
+                    <p class="titulo-seccion">Sobre Mi</p>
+                    <h2>Hola, Soy <span>Luis Rivas</span> </h2>
+                    <h3>Tecnólogo en Desarrollo de Sistemas de Información</h3>
+                    <p>Junior Developer apasionado por la tecnología y con el objetivo de convertirse en Full Stack 
+                        Developer. Formación técnica en desarrollo de software y experiencia en diversos lenguajes de
+                        programación como C#, Java, Python, JavaScript, HTML, CSS, PHP y SQL. Poseo conocimientos en
+                        frameworks y herramientas tales como NodeJS, Spring Boot, Laravel, Figma, Postman, GitHub y
+                        Azure DevOps. Mis conocimientos incluyen el desarrollo, depuración y soporte de aplicaciones
+                        ASP.NET utilizando metodologías ágiles (Scrum y Scrumban), así como la administración de datos
+                        mediante procedimientos almacenados en SQL Oracle Developer, MySQL y SQL Server. Soy un
+                        desarrollador detallista y analítico, con destacadas habilidades en depuración de código y
+                        resolución de problemas. Autodidacta y apasionado por el aprendizaje continuo, con una fuerte
+                        capacidad para trabajar en equipo y colaborar eficazmente para alcanzar objetivos comunes.
+                    </p>
+                    <p> Estoy buscando oportunidades para unirme a proyectos tecnológicos innovadores que me permitan
+                        expandir mis habilidades y conocimientos, y contribuir de manera significativa al éxito del
+                        equipo y la organización.</p>
+                    <a download="CV Junior Developer - Luis Rivas" href="CV/CV Junior Developer - Luis Alejandro Rivas Vivas.pdf">Descargar CV</a>
+                </div>
+            </section>
+
+            <!--SERVICIOS-->
+            <section id="servicios">
+                <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+                <div class="fila">
+                    <div class="servicio">
+                        <span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+                        <h4>Desarrollo básico
+                            <br>
+                            Front-end  </h4>
+                        <hr>
+                        <ul class="servicios-tag">
+                            <li id="tec">Figma</li>
+                            <li id="tec">HTML/CSS</li>
+                            <li id="tec">JavaScript</li>
+                        </ul>
+                        <p>Interfaces web llamativas y funcionales. Utilizando tecnologías como HTML, CSS y JavaScript,
+                            diseño sitios web responsivos que se adaptan perfectamente a cualquier dispositivo. Empleo 
+                            herramientas como Figma para crear prototipos que aseguran que el diseño cumpla con sus
+                            expectativas.</p>
+                    </div>
+                    <div class="servicio">
+                        <span class="icono"><i class="fa-solid fa-laptop-code"></i></i></span>
+                        <h4>Desarrollo básico
+                            <br>
+                            Back-end</h4>
+                        <hr>
+                        <ul class="servicios-tag">
+                            <li id="tec">C#</li>
+                            <li id="tec">Java</li>
+                            <li id="tec">Python</li>
+                            <li id="tec">PHP</li>
+                        </ul>
+                        <p>Backend limpio, funcional y eficiente. Familiarizado con frameworks como NodeJS, Spring
+                            Boot y Laravel. Uso de lenguajes SQL en administradores como Oracle SQL Developer, MySQL
+                            y SQL Server.</p>
+                    </div>
+                    <div class="servicio">
+                        <span class="icono"><i class="fa-solid fa-server"></i></span>
+                        <h4>Configuración de servidores</h4>
+                        <hr>
+                        <ul class="servicios-tag">
+                            <li id="tec">IIS</li>
+                            <li id="tec">FTP</li>
+                            <li id="tec">SMTP</li>
+                        </ul>
+                        <p>Configuración del servidor de aplicaciones IIS para un despliegue eficiente y ordenado.
+                            Establecimiento de conexiones con servidores FTP para la transferencia de archivos y 
+                            servidores SMTP para el envío de correos electrónicos. Uso de FileZilla para el acceso
+                            y la modificación de datos.</p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="servicio">
+                        <span class="icono"><i class="fa-solid fa-user-gear"></i></span>
+                        <h4>Soporte Técnico y Matenimiento</h4>
+                        <hr>
+                        <ul class="servicios-tag">
+                            <li id="tec">Nivel 1</li>
+                            <li id="tec">Nivel 2</li>
+                            <li id="tec">Nivel 3</li>
+                        </ul>
+                        <p>Ofrezco servicios de soporte técnico en aplicaciones, con el objetivo de garantizar su 
+                            funcionamiento óptimo y libre de problemas. Experiencia gestionando incidencias en la mesa 
+                            de servicios EPM.<!--donde me encargue de la resolución, documentación y escalado de incidencias
+                            hacia el área correspondiente para su pronta solución, todo ello en cumplimiento de los Acuerdos
+                            de Niveles de Servicio (ANS)-->
+                        </p>
+                        
+                    </div>
+                    <div class="servicio">
+                        <span class="icono"><i class=""></i></span>
+                        <h4>Próximamente</h4>
+                        <hr>
+                        <ul class="servicios-tag">
+                            <li id="tec">Uno</li>
+                            <li id="tec">Dos</li>
+                            <li id="tec">Tres</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus
+                            voluptatibus deserunt assumenda laboriosam cumque consequatur!</p>
+                    </div>
+                    <div class="servicio">
+                        <span class="icono"><i class=""></i></span>
+                        <h4>Próximamente</h4>
+                        <hr>
+                        <ul class="servicios-tag">
+                            <li id="tec">Uno</li>
+                            <li id="tec">Dos</li>
+                            <li id="tec">Tres</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sint velit est debitis nisi
+                            ipsa aliquid doloremque.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--HABILIDADES-->
+            <div class="contenedor-skills" id="skills">
+                <h3>HABILIDADES </h3>
+                <div class="skill">
+                    <div class="info">
+                        <p> <span class="lista"> </span>Html & Css</p>
+                        <span class="porcentaje">95%</span>
+                    </div>
+
+                    <div class="barra">
+                        <div class="" id="html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="info">
+                        <p> <span class="lista"> </span>Javascript</p>
+                        <span class="porcentaje">90%</span>
+                    </div>
+
+                    <div class="barra">
+                        <div class="" id="js"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="info">
+                        <p> <span class="lista"> </span>Bases de Datos</p>
+                        <span class="porcentaje">90%</span>
+                    </div>
+
+                    <div class="barra">
+                        <div class="" id="bd"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="info">
+                        <p> <span class="lista"> </span>Photoshop</p>
+                        <span class="porcentaje">85%</span>
+                    </div>
+
+                    <div class="barra">
+                        <div class="" id="ps"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCION PORTAFOLIO -->
+            <section id="portfolio">
+
+                <!--FONDO-->
+                <div class="animation-container">
+                    <div class="lightning-container">
+                        <div class="lightning white"></div>
+                        <div class="lightning red"></div>
+                    </div>
+                    <div class="boom-container">
+                        <div class="shape circle big white"></div>
+                        <div class="shape circle white"></div>
+                        <div class="shape triangle big yellow"></div>
+                        <div class="shape disc white"></div>
+                        <div class="shape triangle blue"></div>
+                    </div>
+                    <div class="boom-container second">
+                        <div class="shape circle big white"></div>
+                        <div class="shape circle white"></div>
+                        <div class="shape disc white"></div>
+                        <div class="shape triangle blue"></div>
+                    </div>
+                </div>
+
+                <h3 class="titulo-seccion">Mis Proyectos</h3>
+                <div class="fila">
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="imagenes/icono-upload.png" alt="">
+                        <div class="info">
+                            <h4>Descripcion Proyecto</h4>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="imagenes/icono-upload.png" alt="">
+                        <div class="info">
+                            <h4>Descripcion Proyecto</h4>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="imagenes/icono-upload.png" alt="">
+                        <div class="info">
+                            <h4>Descripcion Proyecto</h4>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="imagenes/icono-upload.png" alt="">
+                        <div class="info">
+                            <h4>Descripcion Proyecto</h4>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="imagenes/icono-upload.png" alt="">
+                        <div class="info">
+                            <h4>Descripcion Proyecto</h4>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="overlay"></div>
+                        <img src="imagenes/icono-upload.png" alt="">
+                        <div class="info">
+                            <h4>Descripcion Proyecto</h4>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--CONTACTO-->
+            <section id="contacto">
+                <h3 class="titulo-seccion">Contactame</h3>
+                <div class="contenedor-form">
+                    <form action="">
+                        <div class="fila mitad">
+                            <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                            <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                        </div>
+                        <div class="fila">
+                            <input type="text" placeholder="Tema..." class="input-full">
+                        </div>
+                        <div class="fila">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                                class="input-full"></textarea>
+                        </div>
+
+                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    </form>
+                </div>
+            </section>
+
+            <!-- SECCION FOOTER -->
+            <footer>
+                <p>Todos los derechos reservados - 2024</p>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
+
+            </footer>
+
+            <script src="script.js"></script>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
